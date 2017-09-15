@@ -55,9 +55,9 @@ _node_toolchain = repository_rule(
     },
 )
 
-def node_repositories(version="6.6.0",
-                      linux_sha256="c22ab0dfa9d0b8d9de02ef7c0d860298a5d1bf6cae7413fb18b99e8a3d25648a",
-                      darwin_sha256="c8d1fe38eb794ca46aacf6c8e90676eec7a8aeec83b4b09f57ce503509e7a19f"):
+def node_repositories(version="8.5.0",
+                      linux_sha256="0000710235e04553147b9c18deadc7cefa4297d4dce190de94cc625d2cf6b9ba",
+                      darwin_sha256="0c8d4c4d90f858a19a29fe1ae7f42b2b7f1a4d3caaa25bea2e08479c00ebbd5f"):
     native.new_http_archive(
         name = "nodejs_linux_amd64",
         url = "https://nodejs.org/dist/v{version}/node-v{version}-linux-x64.tar.gz".format(version=version),
